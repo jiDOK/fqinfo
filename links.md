@@ -11,6 +11,7 @@
 
 ## Hilfreiche Tools vom Asset Store und GitHub ##
 [Adjust Pivot](https://assetstore.unity.com/packages/tools/utilities/adjust-pivot-112883)
+[Third Person Controller](https://github.com/biggzlar/Unity_third_person_controller)
 
 ## Planungs- und Testwerkzeuge ##
 [UMLet - quick UML Diagrams](www.umlet.com/)
