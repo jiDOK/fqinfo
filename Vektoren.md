@@ -11,7 +11,7 @@ Wir benutzen Vektoren in unseren zwei und dreidimensionalen Koordinatensystemen,
 
 Übrigens hat ein Vektor selbst eigentlich keine Position, er ist eine rein relative Größe. Man legt daher einen Nullpunkt (Origin) fest, auf den sich dann ein Ortsvektor (Position Vector) beziehen kann. Der Ortsvektor zeigt vom Nullpunkt aus auf die entsprechende Position.
 
-In Unity und C# notieren wir die Vektoren in Koordinatenschreibweise. Das heißt wir geben als Komponenten die Werte an, die er auf der entsprechenden Achse annimmt. Z.B. `new Vector3(2f, 4f, 0f)`. Der Vektor  beschreibt einen Punkt, der um 2 Einheiten auf der X-Achse, 4 Einheiten auf der Y-Achse und 0 Einheiten auf der Z-Achse verschoben ist. Verschoben - aber von wo aus? Das ist flexibel, es kann die Verschiebung vom Nullpunkt oder von einem beliebiegen anderen Punkt gemeint sein.
+In Unity und C# notieren wir die Vektoren in Koordinatenschreibweise. Das heißt wir geben als Komponenten die Werte an, die er auf der entsprechenden Achse annimmt. Z.B. . Der Vektor  beschreibt einen Punkt, der um 2 Einheiten auf der X-Achse, 4 Einheiten auf der Y-Achse und 0 Einheiten auf der Z-Achse verschoben ist. Verschoben - aber von wo aus? Das ist flexibel, es kann die Verschiebung vom Nullpunkt oder von einem beliebiegen anderen Punkt gemeint sein.
 
 Im diesem Sinne kann man einen Vektor auch einfach als ein mathematisches Objekt sehen, das eine Ansammlung von Zahlen, nämlich seine Komponenten, beherbergt. Die Bedeutung bleibt dabei offen. So läßt sich ein dreidimensionaler Vektor auch benutzen um beispielsweise Farben (RGB) oder Rotationen auszudrücken. Bei räumlichen Vektoren werden die Komponenten meist x und y (2D) oder x, y und z (3D) genannt.
 
