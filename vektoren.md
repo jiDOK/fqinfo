@@ -28,7 +28,9 @@ Addition
 
 Bei der Addition von Vektoren kommt auch wieder ein Vektor heraus. Die Addition von Vektoren ist rechnerisch sehr simpel, es werden einfach jeweils die gleichnamigen Komponenten addiert:
 
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=(a_x,&space;a_y)&space;&plus;&space;(b_x,&space;b_y)&space;=&space;(a_x&space;&plus;&space;b_x,&space;a_y&space;&plus;&space;b_y)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?(a_x,&space;a_y)&space;&plus;&space;(b_x,&space;b_y)&space;=&space;(a_x&space;&plus;&space;b_x,&space;a_y&space;&plus;&space;b_y)" title="(a_x, a_y) + (b_x, b_y) = (a_x + b_x, a_y + b_y)" /></a>
+
 
 Also zum Beispiel:
 
