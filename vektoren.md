@@ -13,7 +13,11 @@ Wir benutzen Vektoren in unseren zwei und dreidimensionalen Koordinatensystemen,
 
 Übrigens hat ein Vektor selbst eigentlich keine Position, er ist eine rein relative Größe. Man legt daher einen Nullpunkt (Origin) fest, auf den sich dann ein Ortsvektor (Position Vector) beziehen kann. Der Ortsvektor zeigt vom Nullpunkt aus auf die entsprechende Position.
 
-In Unity und C# notieren wir die Vektoren in Koordinatenschreibweise. Das heißt wir geben als Komponenten die Werte an, die er auf der entsprechenden Achse annimmt. Z.B. `new Vector3(2f, 4f, 0f)`. Der Vektor <a href="https://www.codecogs.com/eqnedit.php?latex=\vec&space;v&space;=&space;(2,&space;4,&space;0)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\vec&space;v&space;=&space;(2,&space;4,&space;0)" title="\vec v = (2, 4, 0)" /></a> beschreibt einen Punkt, der um 2 Einheiten auf der X-Achse, 4 Einheiten auf der Y-Achse und 0 Einheiten auf der Z-Achse verschoben ist. Verschoben - aber von wo aus? Das ist flexibel, es kann die Verschiebung vom Nullpunkt oder von einem beliebiegen anderen Punkt gemeint sein.
+In Unity und C# notieren wir die Vektoren in Koordinatenschreibweise. Das heißt wir geben als Komponenten die Werte an, die er auf der entsprechenden Achse annimmt. Z.B. `new Vector3(2f, 4f, 0f)`. Der Vektor 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\vec&space;v&space;=&space;(2,&space;4,&space;0)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\vec&space;v&space;=&space;(2,&space;4,&space;0)" title="\vec v = (2, 4, 0)" /></a> 
+
+beschreibt einen Punkt, der um 2 Einheiten auf der X-Achse, 4 Einheiten auf der Y-Achse und 0 Einheiten auf der Z-Achse verschoben ist. Verschoben - aber von wo aus? Das ist flexibel, es kann die Verschiebung vom Nullpunkt oder von einem beliebiegen anderen Punkt gemeint sein.
 
 Im diesem Sinne kann man einen Vektor auch einfach als ein mathematisches Objekt sehen, das eine Ansammlung von Zahlen, nämlich seine Komponenten, beherbergt. Die Bedeutung bleibt dabei offen. So läßt sich ein dreidimensionaler Vektor auch benutzen um beispielsweise Farben (RGB) oder Rotationen auszudrücken. Bei räumlichen Vektoren werden die Komponenten meist x und y (2D) oder x, y und z (3D) genannt.
 
@@ -37,6 +41,7 @@ Diese Addition von zwei Vektoren entspricht der Hintereinanderausführung der zu
 Dieses Prinzip des Hintereinander gilt auch für die Aufteilung auf die jeweiligen Komponenten. Es ist möglich zunächst nur auf der X-Achse, dann nur auf der Y-Achse zu verschieben:
 
 <img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren04.svg">
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=(0,&space;0)&space;&plus;&space;(5,&space;0)&space;&plus;&space;(3,&space;0)&space;&plus;&space;(0,&space;1)&space;&plus;&space;(0,&space;9)&space;=&space;(8,&space;10)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?(0,&space;0)&space;&plus;&space;(5,&space;0)&space;&plus;&space;(3,&space;0)&space;&plus;&space;(0,&space;1)&space;&plus;&space;(0,&space;9)&space;=&space;(8,&space;10)" title="(0, 0) + (5, 0) + (3, 0) + (0, 1) + (0, 9) = (8, 10)" /></a>
 
 Subtraktion
