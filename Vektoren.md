@@ -5,7 +5,7 @@
 Ein Vektor beschreibt eine Verschiebung im Raum. Vektoren haben eine Richtung und eine Länge, auch Magnitude genannt.
 Am einfachsten kann man sich Vektoren als Pfeile vorstellen, die in eine bestimmte Richtung zeigen, und so werden sie auch meist grafisch dargestellt.
 
-<img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren01.svg">
+
 
 Wir benutzen Vektoren in unseren zwei und dreidimensionalen Koordinatensystemen, um beispielsweise Richtungen, Geschwindigkeiten, oder Positionen anzugeben.
 
@@ -26,11 +26,9 @@ Also zum Beispiel:
 Diese Addition von zwei Vektoren entspricht der Hintereinanderausführung der zugehörigen Verschiebungen
 
 
-<img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren02.svg">
 
 Dieses Prinzip des Hintereinander gilt auch für die Aufteilung auf die jeweiligen Komponenten. Es ist möglich zunächst nur auf der X-Achse, dann nur auf der Y-Achse zu verschieben:
 
-<img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren04.svg">
 
 
 Die Subtraktion läuft nach dem gleichen Schema ab.
@@ -39,7 +37,7 @@ Die Subtraktion läuft nach dem gleichen Schema ab.
 
 In der grafischen Darstellung muß der abgezogene Vektor natürlich in die Gegenrichtung weisen -  ein negativer Vektor zeigt immer in die exakt entgegengesetzte Richtung seiner positiven Version.
 
-<img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren03.svg">
+
 
 Wenn man einen Vektor mit negativen Komponenten addiert, passiert das gleiche wie sonst beim Rechnen mit negativen Zahlen auch:
 
@@ -63,7 +61,6 @@ Auch die negativen Zahlen bieten keine Überraschungen:
 Der Vektor ist nun doppelt so lang allerdings in entgegengesetzter Richtung.
 
 
-<img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren05.svg">
 
 Dieses Prinzip des Multiplizierens mit einem Skalar wird Skalierung (Englisch: Scaling) genannt.
 
