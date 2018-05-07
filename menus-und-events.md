@@ -56,10 +56,10 @@ using UnityEngine.Events;
 
 public class PointManager
 {
-	public MyIntEvent PointsChanged = new UnityEvent<int>();
+    public MyIntEvent PointsChanged = new UnityEvent<int>();
 	
     int points = 100;
-	public int Points
+    public int Points
     {
         get{ return points; }
         set
