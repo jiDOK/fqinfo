@@ -79,14 +79,9 @@ Die Möglichkeit, die uns zunächst interessieren soll, ist das Dot Product, auf
 ## Das Dot Product ##
 Hier kommt als Ergebnis eine einfache Zahl - ein Skalar - heraus.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;a&space;\cdot&space;b&space;=&space;a_x&space;*&space;b_x&space;&plus;&space;a_y&space;*&space;b_y" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\large&space;a&space;\cdot&space;b&space;=&space;a_x&space;*&space;b_x&space;&plus;&space;a_y&space;*&space;b_y" title="\large a \cdot b = a_x * b_x + a_y * b_y" /></a>
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;c&space;\cdot&space;d&space;=&space;c_x*d_x&space;&plus;&space;c_y*d_y&space;&plus;&space;c_z*d_z" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\large&space;c&space;\cdot&space;d&space;=&space;c_x*d_x&space;&plus;&space;c_y*d_y&space;&plus;&space;c_z*d_z" title="\large c \cdot d = c_x*d_x + c_y*d_y + c_z*d_z" /></a>
 
 Wie man sieht ist diese Operation keine reine Multiplikation, sondern beinhaltet auch das Addieren der Zwischenergebnisse.
 Obwohl diese Rechnung erst einmal ziemlich zufällig und rätselhaft wirkt ist sie eine der wichtigsten Aktionen, die wir mit Vektoren anstellen können.
 
 Das Dot Product hat die magische Eigenschaft, uns mitzuteilen, "wie sehr" zwei Vektoren in die gleiche Richtung zeigen. Zeigen sie in die gleiche Richtung, ist das Dot Product positiv. Stehen sie senkrecht aufeinander, ist das Dot Product 0. Zeigen sie in entgegengesetzte Richtungen, ist das Dot Product negativ. Wenn man die Vektoren normalisiert, läßt sich sogar der exakte Winkel bestimmen!
-[//]: # "TODO: Bild!"
-[//]: # "TODO: Bug Report dot product"
-<br><br>
+
