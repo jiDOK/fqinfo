@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="662" height="383" style="
+        width:662px;
+        height:383px;
+        background: white;
+        fill: none;
+">
+        <svg xmlns="http://www.w3.org/2000/svg"><g><defs><pattern id=".7893675784421691" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="lightgray" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#.7893675784421691)" stroke="lightgray" stroke-width="0.5"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"><style>
+                    .frame-rect,.add-label{
+                        cursor: pointer;
+                    }                    
+                    </style><g class="shapes-region" style="stroke: black; fill: none;"><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M140,240 L200,60" style="stroke: rgb(66, 118, 206); stroke-width: 1;"/><g class="svg-line-part" stroke="rgba(66,118,206,1)" transform="rotate(468.43 200 60) translate(200 60)" style="stroke: rgb(66, 118, 206);"><path d=" M0,0 Q4.96,-0.45 10.93,-3.29 M0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M140,240 L160,180" style="stroke: rgb(0, 0, 0); stroke-width: 1;"/><g class="svg-line-part" stroke="rgba(0,0,0,1)" transform="rotate(468.43 160 180) translate(160 180)" style="stroke: rgb(0, 0, 0);"><path d=" M0,0 Q4.96,-0.45 10.93,-3.29 M0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M380,180 L280,100" style="stroke: rgb(0, 0, 0); stroke-width: 1;"/><g class="svg-line-part" stroke="rgba(0,0,0,1)" transform="rotate(398.65999999999997 280 100) translate(280 100)" style="stroke: rgb(0, 0, 0);"><path d=" M0,0 Q4.96,-0.45 10.93,-3.29 M0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M380,180 L580,340" style="stroke: rgb(47, 100, 196); stroke-width: 1;"/><g class="svg-line-part" stroke="rgba(47,100,196,1)" transform="rotate(218.66 580 340) translate(580 340)" style="stroke: rgb(47, 100, 196);"><path d=" M0,0 Q4.96,-0.45 10.93,-3.29 M0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="intersections-group"><g style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: none;"/></g></g><g/><g/><!-- react-empty: 2228 --></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="660" height="381" style="width:660px;height:381px;font-family:Asana-Math, Asana;background:white;"></svg>
+</svg>
