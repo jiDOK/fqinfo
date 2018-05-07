@@ -18,7 +18,7 @@ using UnityEngine.Events;
 
 public class MessageHub : MonoBehaviour
 {
-    public UnityEvent GoToPlayMode = new UnityEvent;
+    public UnityEvent GoToPlayMode = new UnityEvent();
     
     void PlayButton()
     {
@@ -34,16 +34,16 @@ using UnityEngine;
 
 public class Listener : MonoBehaviour
 {
-	public MessageHub hub;
-	
-	void OnEnable()
+    public MessageHub hub;
+
+    void OnEnable()
     {
-    	hub.AddListener(OnPlayMode);
+    	hub.GoToPlayMode.AddListener(OnPlayMode);
     } 
 	
-	public void OnPlayMode()
+    public void OnPlayMode()
     {
-    	// Do Playmode-Stuff
+        // Do Playmode-Stuff
     }
 }
 ```
