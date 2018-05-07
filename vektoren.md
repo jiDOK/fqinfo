@@ -23,9 +23,7 @@ Addition
 ### Vektor plus Vektor gleich Vektor
 
 Bei der Addition von Vektoren kommt auch wieder ein Vektor heraus. Die Addition von Vektoren ist rechnerisch sehr simpel, es werden einfach jeweils die gleichnamigen Komponenten addiert:
-
-\\( (a_x, a_y) + (b_x, b_y) = (a_x + b_x, a_y + b_y) \\)
-
+$$ (a_x, a_y) + (b_x, b_y) = (a_x + b_x, a_y + b_y) \$$
 Also zum Beispiel:
 
 \\( (5, 1) + (3, 9) = (8, 10) \\)
