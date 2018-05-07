@@ -23,7 +23,9 @@ Addition
 ### Vektor plus Vektor gleich Vektor
 
 Bei der Addition von Vektoren kommt auch wieder ein Vektor heraus. Die Addition von Vektoren ist rechnerisch sehr simpel, es werden einfach jeweils die gleichnamigen Komponenten addiert:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=(a_x,&space;a_y)&space;&plus;&space;(b_x,&space;b_y)&space;=&space;(a_x&space;&plus;&space;b_x,&space;a_y&space;&plus;&space;b_y)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?(a_x,&space;a_y)&space;&plus;&space;(b_x,&space;b_y)&space;=&space;(a_x&space;&plus;&space;b_x,&space;a_y&space;&plus;&space;b_y)" title="(a_x, a_y) + (b_x, b_y) = (a_x + b_x, a_y + b_y)" /></a>
+
 Also zum Beispiel:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=(5,&space;1)&space;&plus;&space;(3,&space;9)&space;=&space;(8,&space;10)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?(5,&space;1)&space;&plus;&space;(3,&space;9)&space;=&space;(8,&space;10)" title="(5, 1) + (3, 9) = (8, 10)" /></a>
@@ -63,6 +65,7 @@ Bei der Multiplikation ergibt sich ein anderes Bild: Wenn man den Vektor mit ein
 
 Der Vektor ist nun dreimal so lang.
 Rückwärts funktioniert es auch:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=(3,&space;9)&space;/&space;3&space;=&space;(1,&space;3)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?(3,&space;9)&space;/&space;3&space;=&space;(1,&space;3)" title="(3, 9) / 3 = (1, 3)" /></a>
 
 Auch die negativen Zahlen bieten keine Überraschungen:
