@@ -1,6 +1,7 @@
 # jiDOKs FQ Wiki
 
 [gimmick:theme](flatly)
+
 [gimmick: math]()
 
 [About](about.md)
