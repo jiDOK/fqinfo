@@ -104,5 +104,5 @@ Das Dot Product hat die magische Eigenschaft, uns mitzuteilen, "wie sehr" zwei V
 
 Links
 -----
-Erklärungen und interaktive Illustrationen zu linearer Algebra und Vektoren<br>
+Erklärungen und interaktive Illustrationen zum Thema lineare Algebra und Vektoren<br>
 http://immersivemath.com/ila/index.html
