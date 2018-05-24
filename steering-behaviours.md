@@ -87,7 +87,7 @@ Eine typische Art und Weise mit der Steering Force umzugehen, ist sie auf die ak
 velocity += steeringForce;
 ```
 
-<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours03.svg">
+<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours05.svg">
 
 
 Optional können mehrere Arten von Steering Behaviour zusammengerechnet werden. Um zu verhindern, daß sie sich gegenseitig neutralisieren, können sie zusätzlich gewichtet werden. 
