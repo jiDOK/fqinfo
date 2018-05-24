@@ -7,7 +7,7 @@ Steering bedeutet Steuern, Behaviour ist das Verhalten. "Steering Behaviours for
 
 Es geht darin um Lenk- oder Steuerungsverhalten von "autonomen Agents", also die Simulation von selbständig handelnden Akteuren. Reynolds ließ sich unter anderem von dem Wissenschaftler Valentino Braitenberg inspirieren, dessen Forschungen sich im Grenzgebiet zwischen Hirnforschung, Psychologie und Kybernetik bewegten. Dieser hatte ein bekanntes Buch geschrieben, "Vehikel". Es befaßt sich mit roboterhaften Akteuren, deren Verhalten sehr real und selbstmotiviert erscheint, obwohl es durch simpelste Vorgaben bestimmt wird.
 
-Solche Forschungen in Künstlicher Intelligenz wecken natürlich sofort das Interesse, der Game Designer und A.I. Programmer.
+Solche Forschungen in Künstlicher Intelligenz wecken natürlich sofort das Interesse der Game Designer und A.I. Programmer.
 
 Reynolds befaßt sich mit einem speziellen Teilbereich der K.I.(Künstlichen Intelligenz): Es geht ihm weniger um übergeordnete oder strategische Verhaltensweisen der simulierten Wesen, sondern eher um instinktive Bewegungsmanöver aus dem Moment heraus. Beispiele: einem anderen Vehikel oder Hindernis ausweichen, sich in einen Schwarm einfügen, jemanden verfolgen, vor jemandem fliehen, Essen suchen und aufheben, von Wind- oder Wasserströmungen erfaßt werden und so weiter. 
 
@@ -25,20 +25,19 @@ transform.position += velocity;
 
 Eine andere Möglichkeit ist es, die errechnete Steering Force an Unity's Physik Engine weiterzugeben zum Beispiel per `Rigidbody.AddForce()`, diese Methode möchte ebenfalls einen Vektor (Vector3) übergeben bekommen.
 
-Die errechneten Steering Forces funktionieren sowohl in 2D als auch in 3D, allerdings sind sie ursprünglich mehr für die 2D-Welt konzipiert. Wenn man sie in 3D benutzt, ohne spezielle Vorkehrungen zu treffen, kann es passieren, daß Akteure im Boden versinken oder abheben. Es ist allerdings ohne weiteres möglich die Kräfte in 2D zu berechnen und dann auf eine 3D-Welt zu projizieren.
+Steering Forces lassen sich sowohl in 2D als auch in 3D berechnen, allerdings sind sie ursprünglich mehr für die 2D-Welt konzipiert. Wenn man sie in 3D benutzt, ohne spezielle Vorkehrungen zu treffen, kann es passieren, daß Akteure im Boden versinken oder abheben. Es ist allerdings ohne weiteres möglich die Kräfte in 2D zu berechnen und dann auf eine 3D-Welt zu projizieren.
 
 Der Algorithmus, um die einzelnen Steering Forces zu berechnen besteht aus zwei Teilen: 
 Zunächst wird eine Desired Velocity (erwünschte Geschwindigkeit) berechnet. Dies kann sehr einfach vor sich gehen, oder komplexere Berechnungen erfordern. 
 
-Hint: Velocity ist Geschwindigkeit als Vektor, also eine Verschiebung in 
-eine bestimmte Richtung mit einer bestimmten Stärke (Vector Length oder Magnitude).
+Hint: Velocity ist Geschwindigkeit als Vektor, also eine Verschiebung in eine bestimmte Richtung mit einer bestimmten Stärke (Vector Length oder Magnitude).
 
-Dann wird diese Desired Velocity nachbearbeitet, mit der aktuellen Velocity verrechnet und die resultierende Steering Force kann weiterverwendet werden, um z.B. ein Movement-Script anzutreiben.
+Dann wird diese Desired Velocity nachbearbeitet, mit der aktuellen Velocity verrechnet, noch einmal in ihrer Magnitude begrenzt und schließlich kann die resultierende Steering Force weiterverwendet werden, um z.B. ein Movement-Script anzutreiben.
 
 Beispiel: Seek
 ---
 
-Ein einfaches Steering Behaviour ist das Seek Behaviour, es simuliert den Wunsch des Akteurs, sofort ein bestimmtes Target aufsuchen zu wollen. Also beispielsweise will ein Rowdy-NPC (_Akteur_) zum Player (_Target_) rennen, um ihn zusammenzuschlagen. 
+Ein einfaches Steering Behaviour ist das Seek Behaviour, es simuliert den Wunsch des Akteurs, sofort ein bestimmtes Target aufsuchen zu wollen. Also beispielsweise will ein Rowdy-NPC (_Akteur_ oder _Vehicle_) zum Player (_Target_) rennen, um ihn zusammenzuschlagen. 
 
 Dafür muß die Richtung vom NPC zum Player ausgerechnet werden:
 ```cs
@@ -47,12 +46,11 @@ Vector3 desired = player.transform.position - npc.transform.position;
 
 <img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours01.svg">
 
-Das Berechnen oder Auslesen einer solchen Richtung kann von Steering Behaviour zu Steering Behaviour stark 
-variieren. Beim Flee Behaviour ist sie einfach gespiegelt, andere Behaviours, wie Wandering sind etwas komplexer in dieser Hinsicht.
+Note: Das Berechnen oder Auslesen einer solchen erwünschten Richtung kann von Steering Behaviour zu Steering Behaviour stark variieren. Das Flee Behaviour entspricht einem gespiegelten Seek Behaviour, andere Behaviours wie Wandering oder Path Following erfordern komplexere Algorithmen.
 
-Statt die Richtung (`desired`, kurz für Desired Direction oder Desired Velocity) nun ungefiltert als neue Velocity zu benutzen (also quasi direkt dorthin zu teleportieren), wird sie in einen dreiteiligen Prozess eingespeist:
+Statt die Richtung (`desired`, kurz für _Desired Direction_ oder _Desired Velocity_) nun ungefiltert als neue Velocity zu benutzen (was zur Folge hätte direkt ans Ziel zu teleportieren), wird sie in einen dreiteiligen Prozess eingespeist:
 
-1. Sie wird normalisiert und auf eine bestimmte Länge gebracht. Diese Länge liegt als `float` vor und wird `maxSpeed` genannt. Sie soll hemmende Umwelteinflüsse wie z.B. Reibung auf einfache Weise repräsentieren. Schneller als mit dieser Magnitude kann der NPC nicht reisen. Da wir annehmen, daß der Wunsch hinzurennen immer gleich groß ist, setzen wir den Vektor in jedem Fall auf `maxSpeed`. (Dies könnte man natürlich auch variieren und kleinere Werte zulassen.) 
+1. Sie wird normalisiert und auf eine bestimmte Länge gebracht. Diese Länge liegt als `float` vor und wird `maxSpeed` genannt. Sie soll hemmende Umwelteinflüsse wie z.B. Reibung auf einfache Weise repräsentieren. Schneller als mit dieser Magnitude kann der NPC / das Vehikel nicht reisen. Da wir annehmen, daß der Wunsch hinzurennen immer gleich groß ist, setzen wir den Vektor in jedem Fall auf `maxSpeed`. (Dies könnte man natürlich auch variieren und kleinere Werte zulassen.) 
 ```cs
 float maxSpeed = 2f;
 desired = desired.normalized * maxSpeed;
