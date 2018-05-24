@@ -74,7 +74,7 @@ Man kann sich sehr verschiedene Forces ausdenken. Von Wasser- und Windströmunge
 
 Links
 ---
-Das Original-Paper von Craig W. Reynolds
-https://www.red3d.com/cwr/steer/gdc99/
-Gute Erklärung, ausführliche Übersicht und Implementation (Processing) von Dan Shiffman:
-http://natureofcode.com/book/chapter-6-autonomous-agents/
+Das Original-Paper von Craig W. Reynolds<br>
+https://www.red3d.com/cwr/steer/gdc99/<br>
+Gute Erklärung, ausführliche Übersicht und Implementation (Processing) von Dan Shiffman:<br>
+http://natureofcode.com/book/chapter-6-autonomous-agents/<br>
