@@ -44,6 +44,9 @@ Dafür muß die Richtung vom NPC zum Player ausgerechnet werden:
 ```cs
 Vector3 desired = player.transform.position - npc.transform.position;
 ```
+
+<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours01.svg">
+
 Das Berechnen oder Auslesen einer solchen Richtung kann von Steering Behaviour zu Steering Behaviour stark 
 variieren. Beim Flee Behaviour ist sie einfach gespiegelt, andere Behaviours, wie Wandering sind etwas komplexer in dieser Hinsicht.
 
@@ -55,10 +58,15 @@ float maxSpeed = 2f;
 desired = desired.normalized * maxSpeed;
 ```
 
+<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours02.svg">
+
 2. Danach wird sie mit der aktuellen Velocity zusammengefaßt. Die derzeitige Geschwindigkeit darf also in die Berechnung der Steering Force (Lenkkraft) einfließen indem sie von unserer erwünschten Richtung abgezogen wird:
 ```cs
 steeringForce = desired - velocity;
 ```
+
+<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours03.svg">
+
 Note: Diese Formel ist der Kern des Algorithmus für alle Steering Behaviours und ist für die weichen und natürlich wirkenden Bewegungskurven verantwortlich.
 
 3. Zum Schluß wird die resultierende Kraft noch einmal beschränkt: Da weder Lebewesen noch Fahrzeuge unendliche Kraftreserven haben, darf das Resultat eine frei wählbare Obergrenze namens maxForce nicht überschreiten.
@@ -66,7 +74,21 @@ Note: Diese Formel ist der Kern des Algorithmus für alle Steering Behaviours un
 float maxForce = 0.5f;
 steeringForce = Vector3.ClampMagnitude(steeringForce, maxForce);
 ```
+
+
+<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours04.svg">
+
+
 Dadurch wird auch die Trägheit oder Snappiness der Steuerung bestimmt.
+
+Eine typische Art und Weise mit der Steering Force umzugehen, ist sie auf die aktuelle Velocity aufzurechnen.
+
+```cs
+velocity += steeringForce;
+```
+
+<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours03.svg">
+
 
 Optional können mehrere Arten von Steering Behaviour zusammengerechnet werden. Um zu verhindern, daß sie sich gegenseitig neutralisieren, können sie zusätzlich gewichtet werden. 
 
