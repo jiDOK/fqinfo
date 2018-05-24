@@ -50,7 +50,7 @@ Note: Das Berechnen oder Auslesen einer solchen erwünschten Richtung kann von S
 
 Statt die Richtung (`desired`, kurz für _Desired Direction_ oder _Desired Velocity_) nun ungefiltert als neue Velocity zu benutzen (was zur Folge hätte direkt ans Ziel zu teleportieren), wird sie in einen dreiteiligen Prozess eingespeist:
 
-1. Sie wird normalisiert und auf eine bestimmte Länge gebracht. Diese Länge liegt als `float` vor und wird `maxSpeed` genannt. Sie soll hemmende Umwelteinflüsse wie z.B. Reibung auf einfache Weise repräsentieren. Schneller als mit dieser Magnitude kann der NPC / das Vehikel nicht reisen. Da wir annehmen, daß der Wunsch hinzurennen immer gleich groß ist, setzen wir den Vektor in jedem Fall auf `maxSpeed`. (Dies könnte man natürlich auch variieren und kleinere Werte zulassen.) 
+1 Sie wird normalisiert und auf eine bestimmte Länge gebracht. Diese Länge liegt als `float` vor und wird `maxSpeed` genannt. Sie soll hemmende Umwelteinflüsse wie z.B. Reibung auf einfache Weise repräsentieren. Schneller als mit dieser Magnitude kann der NPC / das Vehikel nicht reisen. Da wir annehmen, daß der Wunsch hinzurennen immer gleich groß ist, setzen wir den Vektor in jedem Fall auf `maxSpeed`. (Dies könnte man natürlich auch variieren und kleinere Werte zulassen.) 
 ```cs
 float maxSpeed = 2f;
 desired = desired.normalized * maxSpeed;
@@ -58,7 +58,7 @@ desired = desired.normalized * maxSpeed;
 
 <img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours02.svg">
 
-2. Danach wird sie mit der aktuellen Velocity zusammengefaßt. Die derzeitige Geschwindigkeit darf also in die Berechnung der Steering Force (Lenkkraft) einfließen indem sie von unserer erwünschten Richtung abgezogen wird:
+2 Danach wird sie mit der aktuellen Velocity zusammengefaßt. Die derzeitige Geschwindigkeit darf also in die Berechnung der Steering Force (Lenkkraft) einfließen indem sie von unserer erwünschten Richtung abgezogen wird:
 ```cs
 steeringForce = desired - velocity;
 ```
@@ -67,7 +67,7 @@ steeringForce = desired - velocity;
 
 Note: Diese Formel ist der Kern des Algorithmus für alle Steering Behaviours und ist für die weichen und natürlich wirkenden Bewegungskurven verantwortlich.
 
-3. Zum Schluß wird die resultierende Kraft noch einmal beschränkt: Da weder Lebewesen noch Fahrzeuge unendliche Kraftreserven haben, darf das Resultat eine frei wählbare Obergrenze namens maxForce nicht überschreiten.
+3 Zum Schluß wird die resultierende Kraft noch einmal beschränkt: Da weder Lebewesen noch Fahrzeuge unendliche Kraftreserven haben, darf das Resultat eine frei wählbare Obergrenze namens maxForce nicht überschreiten.
 ```cs
 float maxForce = 0.5f;
 steeringForce = Vector3.ClampMagnitude(steeringForce, maxForce);
