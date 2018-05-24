@@ -71,3 +71,10 @@ Dadurch wird auch die Trägheit oder Snappiness der Steuerung bestimmt.
 Optional können mehrere Arten von Steering Behaviour zusammengerechnet werden. Um zu verhindern, daß sie sich gegenseitig neutralisieren, können sie zusätzlich gewichtet werden. 
 
 Man kann sich sehr verschiedene Forces ausdenken. Von Wasser- und Windströmungen, über Obstacle Avoidance bis hin zu Flocking Behaviour oder Erdanziehungskräften können die unterschiedlichsten physikalischen und psychologischen Kräfte simuliert und kombiniert werden. Dies macht das System sehr flexibel und gut optimierbar für eine große Anzahl von Szenarios.
+
+Links
+---
+Das Original-Paper von Craig W. Reynolds
+https://www.red3d.com/cwr/steer/gdc99/
+Gute Erklärung, ausführliche Übersicht und Implementation (Processing) von Dan Shiffman:
+http://natureofcode.com/book/chapter-6-autonomous-agents/
