@@ -19,6 +19,7 @@
 
 * # Mathe und Algorithmen
 * [Vektoren](vektoren.md)
+* [Steering Behaviours](steering-behaviours.md)
 
 - - - -
 
