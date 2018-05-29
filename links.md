@@ -14,11 +14,14 @@
 
 [Freesound](https://freesound.org/)
 
-## Hilfreiche Tools vom Asset Store und GitHub ##
+## Hilfreiche Tools vom Asset Store, GitHub, usw. ##
+
+[Tree It, Tree Generator](http://www.evolved-software.com/treeit/treeit)
 
 [Adjust Pivot](https://assetstore.unity.com/packages/tools/utilities/adjust-pivot-112883)
 
-[Third Person Controller](https://github.com/biggzlar/Unity_third_person_controller)
+[Character Controller Alternative 1](https://github.com/HiddenMonk/Unity3DCustomCharacterControllerCapsuleCollisionDetection)
+[Character Controller Alternative 2](https://github.com/IronWarrior/SuperCharacterController)
 
 ## Planungs- und Testwerkzeuge ##
 
