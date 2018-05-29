@@ -24,6 +24,8 @@
 
 [Character Controller Alternative 2](https://github.com/IronWarrior/SuperCharacterController)
 
+[Third Person CC mit States](https://github.com/dbrizov/Unity-ThirdPersonController)
+
 ## Planungs- und Testwerkzeuge ##
 
 [UMLet - quick UML Diagrams](www.umlet.com/)
