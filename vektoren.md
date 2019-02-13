@@ -7,7 +7,10 @@ Von hier nach da, relativ
 Ein Vektor beschreibt eine Verschiebung im Raum. Vektoren haben eine Richtung und eine Länge, auch Magnitude genannt.
 Am einfachsten kann man sich Vektoren als Pfeile vorstellen, die in eine bestimmte Richtung zeigen, und so werden sie auch meist grafisch dargestellt.
 
+<!---
 <img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren01.svg">
+-->
+<img src="https://github.com/jiDOK/fqinfo/blob/gh-pages/Images/Vektoren/Vektoren01.svg">
 
 Wir benutzen Vektoren in unseren zwei und dreidimensionalen Koordinatensystemen, um beispielsweise Richtungen, Geschwindigkeiten, oder Positionen anzugeben.
 
