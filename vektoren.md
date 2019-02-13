@@ -10,7 +10,7 @@ Am einfachsten kann man sich Vektoren als Pfeile vorstellen, die in eine bestimm
 <!---
 <img src="https://cdn.rawgit.com/jiDOK/FQ1Wiki/master/VectorsSVG/Vektoren01.svg">
 -->
-<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/Vektoren/Vektoren01.svg">
+<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/Vektoren/Vektoren01.svg?sanitize=true">
 
 Wir benutzen Vektoren in unseren zwei und dreidimensionalen Koordinatensystemen, um beispielsweise Richtungen, Geschwindigkeiten, oder Positionen anzugeben.
 
