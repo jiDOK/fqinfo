@@ -44,7 +44,7 @@ Dafür muß die Richtung vom NPC zum Player ausgerechnet werden:
 Vector3 desired = player.transform.position - npc.transform.position;
 ```
 
-<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours01.svg">
+<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours01.svg?sanitize=true">
 
 Note: Das Berechnen oder Auslesen einer solchen erwünschten Richtung kann von Steering Behaviour zu Steering Behaviour stark variieren. Das Flee Behaviour entspricht einem gespiegelten Seek Behaviour, andere Behaviours wie Wandering oder Path Following erfordern komplexere Algorithmen.
 
@@ -56,14 +56,14 @@ float maxSpeed = 2f;
 desired = desired.normalized * maxSpeed;
 ```
 
-<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours02.svg">
+<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours02.svg?sanitize=true">
 
 2 Danach wird sie mit der aktuellen Velocity zusammengefaßt. Die derzeitige Geschwindigkeit darf also in die Berechnung der Steering Force (Lenkkraft) einfließen indem sie von unserer erwünschten Richtung abgezogen wird:
 ```cs
 steeringForce = desired - velocity;
 ```
 
-<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours03.svg">
+<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours03.svg?sanitize= true">
 
 Note: Diese Formel ist der Kern des Algorithmus für alle Steering Behaviours und ist für die weichen und natürlich wirkenden Bewegungskurven verantwortlich.
 
@@ -74,10 +74,10 @@ steeringForce = Vector3.ClampMagnitude(steeringForce, maxForce);
 ```
 
 
-<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours04.svg">
+<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours04.svg?sanitize=true">
 
 
-Dadurch wird auch die Trägheit oder Snappiness der Steuerung bestimmt.
+Dadurch wird auch die Trägheit oder Wendigkeit der Steuerung bestimmt.
 
 Eine typische Art und Weise mit der Steering Force umzugehen, ist sie auf die aktuelle Velocity aufzurechnen.
 
@@ -85,7 +85,7 @@ Eine typische Art und Weise mit der Steering Force umzugehen, ist sie auf die ak
 velocity += steeringForce;
 ```
 
-<img src="https://cdn.rawgit.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours05.svg">
+<img src="https://raw.githubusercontent.com/jiDOK/fqinfo/gh-pages/Images/SteeringBehaviours/SteeringBehaviours05.svg?sanitized=true">
 
 
 Optional können mehrere Arten von Steering Behaviour zusammengerechnet werden. Um zu verhindern, daß sie sich gegenseitig neutralisieren, können sie zusätzlich gewichtet werden. 
